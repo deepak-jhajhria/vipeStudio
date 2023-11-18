@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .underLine {
+      @apply relative after:absolute after:bg-white after:w-0 after:h-[2px] after:rounded-xl after:bottom-0 after:left-0 inline after:hover:w-full after:duration-300;
+    }
+    .mobileView {
+      @apply max-xl:flex max-xl:flex-col max-xl:items-center max-xl:top-0 max-xl:fixed max-xl:justify-center max-xl:w-full max-xl:h-full max-xl:-left-full duration-300 max-md:bg-purple max-md:z-50;
+    }
+    .mobileView.show{
+      @apply max-xl:left-0
+    }
+    .menu span {
+      @apply w-6 h-[2px] bg-white flex flex-col items-center
+    }
+    .span4{
+      @apply h-[2.4px] rotate-45 relative top-[3px] right-[5px] bg-white duration-300 rounded-2xl
+    }
+    .span5{
+      @apply h-[2.4px] -rotate-45 relative -top-[6.5px] right-[5px] bg-white duration-300 w-6 rounded-2xl
+    }
+    .span6{
+      @apply hidden duration-300
+    }
+    .purpleEllipse{
+      @apply w-40 h-40 bg-purple flex blur-[90px]
+    }
+    .pinkEllipse{
+      @apply w-40 h-40 bg-pink flex blur-[90px]
+    }
+  }
