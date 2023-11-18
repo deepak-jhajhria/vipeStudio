@@ -19,6 +19,7 @@ module.exports = {
       'secondaryBlack':'#0D0D0D',
       'purple':'#6022EA',
       'pink':'#FA00FF',
+      'gradientLinks':'linear-gradient(45deg,#ff61d3 10%,#b318ff 36%,#b318ff 47%,#30b6ff 67%,#00f0ff 76%,#1e43ff)'
     },
     container:{
       padding:'14px',
