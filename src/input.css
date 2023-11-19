@@ -1,33 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer components {
-    .underLine {
-      @apply relative after:absolute after:bg-white after:w-0 after:h-[2px] after:rounded-xl after:bottom-0 after:left-0 inline after:hover:w-full after:duration-300;
-    }
-    .mobileView {
-      @apply max-xl:flex max-xl:flex-col max-xl:items-center max-xl:top-0 max-xl:fixed max-xl:justify-center max-xl:w-full max-xl:h-full max-xl:-left-full duration-300 max-md:bg-purple max-md:z-50;
-    }
-    .mobileView.show{
-      @apply max-xl:left-0
-    }
-    .menu span {
-      @apply w-6 h-[2px] bg-white flex flex-col items-center
-    }
-    .span4{
-      @apply h-[2.4px] rotate-45 relative top-[3px] right-[5px] bg-white duration-300 rounded-2xl
-    }
-    .span5{
-      @apply h-[2.4px] -rotate-45 relative -top-[6.5px] right-[5px] bg-white duration-300 w-6 rounded-2xl
-    }
-    .span6{
-      @apply hidden duration-300
-    }
-    .purpleEllipse{
-      @apply w-40 h-40 bg-purple flex blur-[90px]
-    }
-    .pinkEllipse{
-      @apply w-40 h-40 bg-pink flex blur-[90px]
-    }
+  .underLine {
+    @apply relative after:absolute after:bg-white after:w-0 after:h-[2px] after:rounded-xl after:bottom-0 after:left-0 inline after:hover:w-full after:duration-300;
   }
+  .mobileView {
+    @apply max-xl:flex max-xl:flex-col max-xl:items-center max-xl:top-0 max-xl:fixed max-xl:justify-center max-sm:w-full max-xl:w-1/2 max-xl:min-w-[320px] max-xl:h-full max-xl:-right-full duration-300 max-xl:bg-gradient-to-r max-xl:from-purple max-xl:from-30% max-xl:to-pink max-xl:z-50;
+  }
+  .mobileView.show {
+    @apply max-xl:right-0;
+  }
+  .span1 {
+    @apply w-6 h-[2px] bg-white flex flex-col items-center;
+  }
+  .span2 {
+    @apply w-6 h-[2px] bg-white flex flex-col items-center;
+  }
+  .span3 {
+    @apply w-6 h-[2px] bg-white flex flex-col items-center;
+  }
+  .span4 {
+    @apply h-[2.4px] w-5 -rotate-[32deg] relative top-[4.5px] right-[1.5px] bg-white duration-300 rounded-2xl;
+  }
+  .span5 {
+    @apply h-[2.4px] w-[30px] relative bg-white duration-300 rounded-2xl;
+  }
+  .span6 {
+    @apply relative rotate-[35deg] w-5 -top-[3.5px] -left-[1.5px] duration-300 rounded-2xl;
+  }
+  .purpleEllipse {
+    @apply w-40 h-40 bg-purple flex blur-[90px];
+  }
+  .pinkEllipse {
+    @apply w-40 h-40 bg-pink flex blur-[90px];
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  @font-face {
+    font-family: "Gilroy";
+    src: url(/Gilroy-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Konexy Personal Use";
+    src: url(/KonexyPersonalUse.otf);
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url(/Inter/Inter-VariableFont_slnt\,wght.ttf);
+  }
+}

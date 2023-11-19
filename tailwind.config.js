@@ -19,7 +19,8 @@ module.exports = {
       'secondaryBlack':'#0D0D0D',
       'purple':'#6022EA',
       'pink':'#FA00FF',
-      'gradientLinks':'linear-gradient(45deg,#ff61d3 10%,#b318ff 36%,#b318ff 47%,#30b6ff 67%,#00f0ff 76%,#1e43ff)'
+      'gradientLinks':'linear-gradient(45deg,#ff61d3 10%,#b318ff 36%,#b318ff 47%,#30b6ff 67%,#00f0ff 76%,#1e43ff)',
+      'yellow':'#f19a1a'
     },
     container:{
       padding:'14px',
@@ -29,6 +30,7 @@ module.exports = {
       'md':'768px',
       'lg':'992px',
       'xl':'1320px',
+      '2xl':'1640px',
     },
   },
   plugins: [],
