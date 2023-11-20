@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-  .underLine {
-    @apply relative after:absolute after:bg-white after:w-0 after:h-[2px] after:rounded-xl after:bottom-0 after:left-0 inline after:hover:w-full after:duration-300;
+  .linksLine {
+    @apply relative after:absolute after:bg-white after:w-0 after:h-[1px] after:rounded-xl after:bottom-0 after:left-0 inline after:hover:w-full after:duration-300;
   }
   .mobileView {
     @apply max-xl:flex max-xl:flex-col max-xl:items-center max-xl:top-0 max-xl:fixed max-xl:justify-center max-sm:w-full max-xl:w-1/2 max-xl:min-w-[320px] max-xl:h-full max-xl:-right-full duration-300 max-xl:bg-gradient-to-r max-xl:from-purple max-xl:from-30% max-xl:to-pink max-xl:z-50;
